@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Levi Construction | Custom Woodwork and Design</title>
+    <meta name="description"
+        content="Levi Construction specializes in custom doors, flooring, and unique woodwork projects for residential and commercial needs. With over 35 years of experience, we turn wood into art.">
+    <meta name="keywords"
+        content="custom doors, custom flooring, woodwork, Levi Construction, residential projects, commercial projects">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="Levi Construction | Custom Woodwork and Design">
+    <meta property="og:description"
+        content="Levi Construction specializes in custom doors, flooring, and unique woodwork projects. Over 35 years of experience in transforming wood into art.">
+    <meta property="og:image" content="img/logo.png"> <!-- Ensure you have a relevant image for sharing -->
+    <meta property="og:url" content="https://www.leviconstruction.com">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Card Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Levi Construction | Custom Woodwork and Design">
+    <meta name="twitter:description"
+        content="Levi Construction offers custom doors, flooring, and unique woodwork with over 35 years of experience. Transform your space with our expertise.">
+    <meta name="twitter:image" content="img/logo.png"> <!-- Ensure you have a relevant image for sharing -->
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://www.leviconstruction.com">
+
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/1366979560.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <img class="logo" src="img/logo.png" alt="Logo">
+        <div>
+            <h1>Welcome to Levi Construction</h1>
+            <p>Turning wood into art since 1985</p>
+        </div>
+    </header>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>At Levi Construction, we have over 35 years of experience creating unique and high-quality pieces. Whether
+            for residential or commercial projects, our dedication to excellence is what sets us apart.</p>
+    </section>
+
+    <section id="services">
+        <h2>Our Services</h2>
+        <ul>
+            <li>
+                <div>
+                    <strong>Custom Doors:</strong> Custom interior and exterior doors to meet your needs.
+                </div>
+                <img src="img/instalador-de-portas-2.webp" alt="Door 1">
+            </li>
+            <li>
+                <strong>Custom Flooring:</strong> Flooring in various styles, made to fit your space.
+                <img src="img/Flooring.jpeg" alt="Window 1">
+            </li>
+            <li>
+                <strong>Special Projects:</strong> We work on custom projects to create unique and exclusive pieces.
+                <img src="img/porta2.jpg" alt="Door 2">
+            </li>
+        </ul>
+    </section>
+
+    <section class="slideshow-container">
+        <div class="slides">
+            <img src="img/slide1.jpeg" alt="">
+            <img src="img/slide2.jpeg" alt="">
+            <img src="img/slide3.jpeg" alt="">
+            <img src="img/slide4.jpeg" alt="">
+            <img src="img/slide5.jpeg" alt="">
+            <img src="img/slide6.jpeg" alt="">
+            <img src="img/slide7.jpeg" alt="">
+            <img src="img/slide8.jpeg" alt="">
+            <img src="img/slide9.jpeg" alt="">
+            <img src="img/slide10.jpeg" alt="">
+            <img src="img/slide11.jpeg" alt="">
+            <img src="img/slide12.jpeg" alt="">
+            <img src="img/slide13.jpeg" alt="">
+            <img src="img/slide14.jpeg" alt="">
+            <img src="img/slide15.jpeg" alt="">
+            <img src="img/slide16.jpeg" alt="">
+            <img src="img/slide17.jpeg" alt="">
+            <img src="img/slide18.jpeg" alt="">
+            <img src="img/slide19.jpeg" alt="">
+        </div>
+    </section>
+
+    <section id="testimonials">
+        <h2>What Our Clients Say</h2>
+        <blockquote>
+            <p>"Levi Construction's custom doors transformed my home. Excellent work!"</p>
+            <footer>— John S.</footer>
+        </blockquote>
+        <blockquote>
+            <p>"Great professionalism and attention to detail. The windows turned out perfect!"</p>
+            <footer>— Mary T.</footer>
+        </blockquote>
+    </section>
+
+    <section id="contact">
+        <div class="action">
+            <a
+                href="https://api.whatsapp.com/send?phone=19784837241&amp;text=Hi,%20I%20saw%20your%20website%20and%20I%20would%20like%20to%20get%20a%20quote%20for%20doors.%20Thank%20you!">
+                <h3>Request a Quote</h3>
+                <i class="fa-brands fa-whatsapp fa-xl"></i>
+            </a>
+        </div>
+
+    </section>
+
+    <footer>
+        <p>Address: 123 Carpenter Street, City, State</p>
+        <p>Phone: (11) 1234-5678</p>
+        <p>Email: <a href="mailto:contact@woodmaster.com">contact@woodmaster.com</a></p>
+        <p>© 2024 Levi Construction. All rights reserved.</p>
+    </footer>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // Função a ser chamada quando o elemento aparecer na tela
+            function handleIntersection(entries, observer) {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        document.querySelector('.action').classList.remove('simple')
+                    } else {
+                        document.querySelector('.action').classList.add('simple')
+                    }
+                });
+            }
+
+            // Opções do observer (você pode ajustar as margens e o threshold conforme necessário)
+            const options = {
+                root: null, // Usa a viewport como a raiz
+                rootMargin: '0px',
+                threshold: 0.1 // Chama a função quando 10% do elemento estiver visível
+            };
+
+            // Cria o observer
+            const observer = new IntersectionObserver(handleIntersection, options);
+
+            // Elemento que você quer observar
+            const target = document.querySelector('footer p');
+
+            // Comece a observar o elemento
+            observer.observe(target);
+        });
+    </script>
+    <script src="script.js"></script>
+</body>
+
+</html>

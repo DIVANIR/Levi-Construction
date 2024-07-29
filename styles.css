@@ -1,0 +1,209 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+header {
+    background-image: url(img/wood-header.jpg);
+    color: white;
+    padding: 2rem 1rem;
+    text-align: center;
+    width: 105vw;
+}
+
+header h1 {
+    text-shadow: #333 1px 1px;
+    line-height: 30px;
+    margin: 12px;
+}
+
+header p {
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+section {
+    padding: 2rem 1rem;
+    max-width: 800px;
+    margin: 15px auto;
+}
+
+h2 {
+    color: #8b5e34;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    background: #f4f4f4;
+    margin: 0.5rem 0;
+    padding: 1rem;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#services img {
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    width: 95%;
+    max-width: 400px;
+    margin: auto;
+}
+
+blockquote {
+    background: #f9f9f9;
+    border-left: 10px solid #8b5e34;
+    margin: 1.5rem 0;
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+blockquote footer {
+    text-align: right;
+    font-size: 0.9rem;
+    color: #555;
+    width: auto;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 1rem;
+}
+
+input,
+textarea {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 0.5rem;
+}
+
+button {
+    background: #8b5e34;
+    color: white;
+    padding: 0.7rem;
+    border: none;
+    border-radius: 5px;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #734d29;
+}
+
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    width: 105vw;
+}
+
+footer a {
+    color: #8b5e34;
+    text-decoration: none;
+}
+
+
+.logo {
+    width: 180px;
+}
+
+.action {
+    background-color: #46c254;
+    color: #fff;
+    width: max-content;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    padding: 0 15px;
+    height: 50px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 2s;
+}
+
+.action a {
+    display: flex;
+    gap: 8px;
+    color: #fff;
+    font-size: 25px;
+    text-decoration: none;
+}
+
+.action .fa-xl {
+    line-height: 2.8rem;
+}
+
+.simple {
+    width: 50px;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    transition: all 2s;
+    position: fixed;
+    bottom: 35px;
+    right: 15px;
+}
+
+.simple * {
+    padding: 0;
+    margin: 0;
+}
+
+.simple h3 {
+    display: none;
+}
+
+#contact {
+    height: 100px;
+}
+
+.slideshow-container {
+    /*position: relative;*/
+    overflow-x: scroll;
+    width: 100vw;
+    margin: auto;
+    /*touch-action: pan-y;*/
+    /* Permitir deslize vertical em dispositivos móveis */
+    /*   overflow-x: auto;*/
+}
+
+.slides {
+    display: flex;
+}
+
+.slides img {
+    width: 90vw;
+    height: 90vh;
+    object-fit: cover;
+    margin-trim: 0;
+    margin: 16px;
+    border-width: 20px;
+    border-style: solid;
+    border-image-source: url('img/wood-header.jpg');
+    border-image-slice: 20;
+    border-image-repeat: round;
+}
