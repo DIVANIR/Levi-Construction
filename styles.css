@@ -21,7 +21,7 @@ header {
 
 header h1 {
     text-shadow: #333 1px 1px;
-    line-height: 30px;
+    line-height:46px;
     margin: 12px;
     font-size: 48px;
 }
@@ -213,4 +213,22 @@ footer a {
     border-image-source: url('img/wood-header.jpg');
     border-image-slice: 20;
     border-image-repeat: round;
+}
+
+
+
+@keyframes scrollHighlight {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(-50px); /* Scroll right by 20px */
+    }
+    100% {
+        transform: translateX(0); /* Return to the original position */
+    }
+}
+/* Apply the animation class */
+.highlight div{
+    animation: scrollHighlight 1s ease-in-out;
 }
